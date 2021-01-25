@@ -1,5 +1,7 @@
 # deepak_gupta_ncs_ml
 
+Do checkout master branch
+
 Build the image using the following command
 
 ```bash
