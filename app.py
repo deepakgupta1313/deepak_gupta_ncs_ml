@@ -100,7 +100,7 @@ def train():
 
     model.save(model_directory)
 
-    return 'Model Trained Successfully'
+    return 'Model Trained Successfully with test accuracy ' + str(accuracy)
 
 
 if __name__ == '__main__':
