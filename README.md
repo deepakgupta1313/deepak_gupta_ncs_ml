@@ -5,13 +5,13 @@ Do checkout master branch
 Build the image using the following command
 
 ```bash
-$ docker build -t gender-predictor-app:latest .
+$ sudo docker build -t gender-predictor-app:latest .
 ```
 
 Run the Docker container using the command shown below.
 
 ```bash
-$ docker run -d -p 5000:5000 gender-predictor-app
+$ sudo docker run -d -p 5000:5000 gender-predictor-app
 ```
 
 The application will be accessible at http:127.0.0.1:5000
