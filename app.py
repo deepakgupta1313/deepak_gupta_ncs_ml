@@ -12,8 +12,9 @@ from sklearn.model_selection import train_test_split
 
 app = Flask(__name__)
 
-root_dir = "/content/"
+root_dir = ""
 maxlen = 100
+
 # inputs
 training_data = root_dir + 'data/excel.csv'
 include_columns = ['first_name', 'gender']
@@ -84,7 +85,7 @@ def train():
     model.summary()
 
     model.fit(x_train, y_train,
-              epochs=10,
+              epochs=20,
               verbose=True,
               validation_data=(x_test, y_test),
               batch_size=10)
